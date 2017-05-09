@@ -1,17 +1,32 @@
 {% if page.layout != 'noscript' %}
   <script src="{{ site.baseurl }}/assets/libraries/jquery/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/libraries/imagesloaded/imagesloaded.min.js"></script>
+  <script async src="{{ site.baseurl }}/assets/libraries/imagesloaded/imagesloaded.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/libraries/materialize-css/js/materialize.min.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/libraries/swiper/js/swiper.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/libraries/handlebars/handlebars.js"></script>
+  <script async type="text/javascript" src="{{ site.baseurl }}/assets/libraries/swiper/js/swiper.min.js"></script>
+  <script async src="{{ site.baseurl }}/assets/libraries/handlebars/handlebars.js"></script>
   {% include templates.html %}
   {% if page.layout == 'theme' %}
-    <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/theme.js"></script>
   {% endif %}
   {% if page.layout == 'home' %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/7.2.0/lazyload.transpiled.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/libraries/underscore/underscore.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/libraries/underscore/underscore.string.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/home.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/7.2.0/lazyload.transpiled.min.js"></script>
+    <script async src="{{ site.baseurl }}/assets/libraries/underscore/underscore.min.js"></script>
+    <script async src="{{ site.baseurl }}/assets/libraries/underscore/underscore.string.js"></script>
+    <script async src="{{ site.baseurl }}/assets/js/home.js"></script>
   {% endif %}
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//piwik.chromaticaldesign.com/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '8']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Piwik Code -->
 {% endif %}

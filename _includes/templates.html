@@ -1,18 +1,3 @@
-<script>
-Handlebars.registerHelper('gt', function(val1, val2, options) {
-  if (val1 >= val2){
-    return options.fn(this)
-  }
-  return options.inverse(this)
-})
-
-Handlebars.registerHelper('lt', function(val1, val2, options) {
-  if (val1 < val2){
-    return options.fn(this)
-  }
-  return options.inverse(this)
-})
-</script>
 {% raw %}
 <script id="themeTemplate" type="text/x-handlebars-template">
   <a href="/theme/{{url}}" class="theme animated fadeIn theme-url" id="{{url}}-theme" data-theme="{{url}}">
