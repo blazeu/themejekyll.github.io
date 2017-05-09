@@ -20,7 +20,7 @@ $(document).ready(function () {
   })
 
   // Get the theme JSON file
-  $.getJSON('http://192.168.0.107:3000/', function (returnedThemes) {
+  $.getJSON('https://themejekyll-chromatical.rhcloud.com/', function (returnedThemes) {
     var masterThemeList = returnedThemes
 
     // Hide the loader
@@ -133,7 +133,7 @@ $(document).ready(function () {
     // Update a theme in the view (also updates masterThemeList)
     function updateTheme (theme) {
       $.ajax({
-        url: 'http://192.168.0.107:3000/update',
+        url: 'https://themejekyll-chromatical.rhcloud.com/update',
         data: JSON.stringify({url: theme}),
         method: 'POST',
         contentType: 'application/json',
@@ -339,7 +339,7 @@ $(document).ready(function () {
     })
     $('#theme-wrapper').on('click', '.rating-star', function () {
       $.ajax({
-        url: 'http://192.168.0.107:3000/star',
+        url: 'https://themejekyll-chromatical.rhcloud.com/star',
         data: JSON.stringify({url: $('#ratings').attr('data-url'), stars: $(this).attr('data-rating')}),
         method: 'POST',
         contentType: 'application/json',
@@ -355,7 +355,7 @@ $(document).ready(function () {
     })
 
     function updateRatings () {
-      $.ajax({url: 'http://192.168.0.107:3000/stars/', data: JSON.stringify({url: $('#ratings').attr('data-url')}), method: 'POST', contentType: 'application/json', success: function (result) {
+      $.ajax({url: 'https://themejekyll-chromatical.rhcloud.com/stars', data: JSON.stringify({url: $('#ratings').attr('data-url')}), method: 'POST', contentType: 'application/json', success: function (result) {
         $('#ratings').html(ratingTemplate(JSON.parse(result)))
         updateTheme($('#ratings').attr('data-url'))
       }})

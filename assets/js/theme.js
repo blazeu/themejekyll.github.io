@@ -20,7 +20,7 @@ $(document).ready(function () {
   }
 
   function updateRatings () {
-    $.ajax({url: 'http://192.168.0.107:3000/stars/', data: JSON.stringify({url: $('#ratings').attr('data-url')}), method: 'POST', contentType: 'application/json', success: function (result) {
+    $.ajax({url: 'https://themejekyll-chromatical.rhcloud.com/stars/', data: JSON.stringify({url: $('#ratings').attr('data-url')}), method: 'POST', contentType: 'application/json', success: function (result) {
       $('#ratings').html(ratingTemplate(JSON.parse(result)))
     }})
   }
@@ -43,7 +43,7 @@ $(document).ready(function () {
   })
   $('#theme-wrapper').on('click', '.rating-star', function () {
     $.ajax({
-      url: 'http://192.168.0.107:3000/star',
+      url: 'https://themejekyll-chromatical.rhcloud.com/star',
       data: JSON.stringify({url: $('#ratings').attr('data-url'), stars: $(this).attr('data-rating')}),
       method: 'POST',
       contentType: 'application/json',
