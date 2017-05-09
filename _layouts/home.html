@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<main id="home-wrapper">
+  <div id="loader" class="animated fadeIn center jsonly">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center-align hidden animated fadeIn grey-text" id="noThemesFound">
+    <i class="material-icons large">search</i>
+    <p class="flow-text">No Themes Found</p>
+  </div>
+  <div id="themeView"></div>
+  <div class="center left load-more">
+    <a class="waves-effect waves-light btn-large" id="showMore">Load More</a>
+  </div>
+  <noscript>
+    <div class="center-align grey-text">
+      <i class="material-icons large">warning</i>
+      <p class="flow-text">JavaScript Required</p>
+      <p>Please enable JavaScript or use the <a href="{{ site.baseurl }}/noscript">no script version</a>.</p>
+    </div>
+  </noscript>
+  <div class="center-align grey-text animated fadeIn hidden" id="loadFailed">
+    <i class="material-icons large">warning</i>
+    <p class="flow-text">Loading Failed</p>
+    <p>Something went wrong.  Please reload this page or use the <a href="{{ site.baseurl }}/noscript">no script version</a>.</p>
+  </div>
+</main>
+<div id="theme-wrapper" class="animated fadeIn hidden">
+</div>

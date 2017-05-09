@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {% include head.html %}
+  </head>
+  <body class="grey lighten-4{% if page.layout == 'home' %} home{% endif %}">
+    {% include navbar.html %}
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,100 @@
+{% if page.layout == 'home' %}
+  <ul id="slide-out" class="side-nav fixed blue-grey z-depth-3 darken-3 text-grey text-lighten-5">
+    <ul>
+      <li>
+        <a id="slideout-close" class="collection-item center-align hide-on-large-only"><i class="material-icons white-text no-margins no-float">close</i></a>
+        <a id="filters-clear" class="collection-item white-text"><i class="material-icons white-text no-margins">settings_backup_restore</i> &nbsp; Reset Filters</a>
+      </li>
+    </ul>
+    <div class="container">
+      <form action="#" id="filters">
+        <div class="input-field">
+          <input id="searchBox" class="search white-text" type="text" placeholder="Search by name...">
+        </div>
+        <div class="input-field">
+          <select class="white-text" id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="name">Name</option>
+            <option value="rating">Rating</option>
+            <option value="popularity">Popularity</option>
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+          </select>
+          <label>Sort by</label>
+        </div>
+        <p class="flow-text grey-text text-lighten-5">Features</p>
+        <div id="features">
+        </div>
+        <p class="flow-text grey-text text-lighten-5">Categories</p>
+        <div id="categories">
+        </div>
+        <p class="flow-text grey-text text-lighten-5">Layouts</p>
+        <div id="layouts">
+        </div>
+        <p class="flow-text grey-text text-lighten-5">Tags</p>
+        <div class="chips chips-autocomplete" id="tags">
+        </div>
+        <p class="flow-text grey-text text-lighten-5">Rating</p>
+        <div id="rating">
+          <p class="no-margins">
+            <input name="stars" checked="true" class="filter any-rating" type="radio" id="star0"  data-rating="0" />
+            <label for="star0">Any</label>
+          </p>
+          <p class="no-margins">
+            <input name="stars" class="filter" type="radio" id="star1"  data-rating="1" />
+            <label for="star1"><i class="material-icons amber-text text-lighten-1">star_border</i></label>
+          </p>
+          <p class="no-margins">
+            <input name="stars" class="filter" type="radio" id="star2"  data-rating="1.5" />
+            <label for="star2"><i class="material-icons amber-text text-lighten-1">star_border star_border</i></label>
+          </p>
+          <p class="no-margins">
+            <input name="stars" class="filter" type="radio" id="star3"  data-rating="2.5" />
+            <label for="star3"><i class="material-icons amber-text text-lighten-1">star_border star_border star_border</i></label>
+          </p>
+          <p class="no-margins">
+            <input name="stars" class="filter" type="radio" id="star4"  data-rating="3.5" />
+            <label for="star4"><i class="material-icons amber-text text-lighten-1">star_border star_border star_border star_border</i></label>
+          </p>
+          <p class="no-margins">
+            <input name="stars" class="filter" type="radio" id="star5"  data-rating="4.5" />
+            <label for="star5"><i class="material-icons amber-text text-lighten-1">star_border star_border star_border star_border star_border</i></label>
+          </p>
+          </p>
+        </div>
+      </form>
+    </div>
+  </ul>
+{% endif %}
+<header>
+  <div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="{{ site.baseurl }}/">Themes</a></li>
+      <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+      <li><a href="https://github.com/chromatical/themejekyll">Add a Theme</a></li>
+    </ul>
+    <nav class="blue-grey darken-4 {% if page.layout == 'theme' %}z-depth-0{% endif %}" id="top-nav">
+      <div class="nav-wrapper">
+        <a href="{{ site.baseurl }}/" class="brand-logo">ThemeJekyll <h1 class="mission hide-on-med-and-down">Search and find free, open-source Jekyll themes.</h1></a>
+        {% if page.layout == 'home' %}<ul class="left hide-on-large">
+          <li id="slide-out-button" class="jsonly"><a class="button-collapse" data-activates="slide-out"><i class="material-icons">list</i></a></li>
+        </ul>{% endif %}
+        <ul class="right">
+          {% if page.layout != 'noscript' %}
+            <li class="jsonly"><a class="dropdown-button" data-beloworigin="true" data-constrainwidth="false" data-activates="dropdown1"><i class="material-icons">menu</i></a></li>
+          {% endif %}
+          {% if page.layout != 'noscript' %}
+            <noscript>
+          {% endif %}
+            <li><a href="{{ site.baseurl }}/">Themes</a></li>
+            <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+            <li><a href="https://github.com/chromatical/themejekyll">Add a Theme</a></li>
+          {% if page.layout != 'noscript' %}
+            </noscript>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</header>

@@ -1,0 +1,17 @@
+{% if page.layout != 'noscript' %}
+  <script src="{{ site.baseurl }}/assets/libraries/jquery/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/libraries/imagesloaded/imagesloaded.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/libraries/materialize-css/js/materialize.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/libraries/swiper/js/swiper.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/libraries/handlebars/handlebars.js"></script>
+  {% include templates.html %}
+  {% if page.layout == 'theme' %}
+    <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+  {% endif %}
+  {% if page.layout == 'home' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/7.2.0/lazyload.transpiled.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/libraries/underscore/underscore.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/libraries/underscore/underscore.string.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/home.js"></script>
+  {% endif %}
+{% endif %}

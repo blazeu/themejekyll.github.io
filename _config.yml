@@ -1,0 +1,32 @@
+title: ThemeJekyll
+email: hello@chromaticaldesign.com
+description: Search and find free, open source Jekyll themes.
+baseurl: ""
+url: ""
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+  themes:
+    output: true
+    permalink: /theme/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: themes
+    values:
+      layout: theme
+
+markdown: kramdown
+gems:
+  - jemoji
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - example.md
