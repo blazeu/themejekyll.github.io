@@ -19,6 +19,11 @@ body nav, body footer {
   cursor: pointer;
 }
 
+.filter-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .hidden{
   display: none;
 }
@@ -63,7 +68,7 @@ h2.brand-logo, h2.brand-logo span{
   color: white !important;
 }
 
-body.show-theme main{
+body.show-theme #themeView, body.show-theme .load-more{
   display: none;
 }
 
@@ -180,14 +185,17 @@ nav .nav-wrapper{
   padding-right: 1.5%;
 }
 
-#home-wrapper{
+#themeView, #messages{
   padding-top: 1.5%;
+}
+
+#themeView, #messages{
   padding-left: 300px;
 }
 
 
 @media (max-width : 992px) {
-  nav, main, footer {
+  nav, #themeView, #messages, footer {
     padding-left: 0 !important;
   }
 
