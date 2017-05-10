@@ -248,11 +248,17 @@ $(document).ready(function () {
       // Remember scroll location
       scrollLocation = $(document).scrollTop()
 
+      // Cache the loading theme
+      var loadingTheme = _.where(masterThemeList, {url: theme})[0]
+
       // Change some classes to alter the layout
       $('body').removeClass('home').addClass('show-theme')
 
       // Load the HTML from a Handlebars template
-      $('#theme-wrapper').empty().html(themePageTemplate(_.where(masterThemeList, {url: theme})[0]))
+      $('#theme-wrapper').empty().html(themePageTemplate(loadingTheme))
+
+      // Update page title
+      $('title').text(loadingTheme.title + ' | ThemeJekyll - Jekyll Themes Gallery')
 
       // Show the AJAX page
       $('#theme-wrapper').show()
@@ -282,6 +288,9 @@ $(document).ready(function () {
 
         // Empty the AJAX page
         $('#theme-wrapper').empty()
+
+        // Update page title
+        $('title').text('ThemeJekyll - Jekyll Themes Gallery')
       })
       // Go back to the old scroll location
       $(document).scrollTop(scrollLocation)
