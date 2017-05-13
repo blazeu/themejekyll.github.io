@@ -5,7 +5,7 @@ license: apache-2.0
 license_link: https://github.com/volny/stylish-portfolio-jekyll/blob/master/LICENSE
 homepage: https://github.com/volny/stylish-portfolio-jekyll
 github: volny
-repository: https://github.com/volny/stylish-portfolio-jekyll
+repository: stylish-portfolio-jekyll
 demo: https://volny.github.io/stylish-portfolio-jekyll/
 download: https://github.com/volny/stylish-portfolio-jekyll/archive/master.zip
 screenshots:
@@ -28,3 +28,4 @@ layouts:
 tags:
   - smooth scroll
 ---
+A Jekyll implementation of the [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) template by [Start Bootstrap](http://startbootstrap.com/).

@@ -26,6 +26,7 @@ layouts:
 tags:
   - minimalist
   - animated
+  - bootstrap
 ---
 
 
