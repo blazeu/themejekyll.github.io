@@ -5,9 +5,10 @@
 
 1. Fork this repo.
 2. Create up to 5 screenshots and put them in assets/screenshots/theme-name.
-3. Copy example.md from the repository root into _themes and rename it as theme-name.md
-4. Edit the YAML data in the file to reflect your theme (see below).
-5. Submit a pull request!
+3. Create a resized version of the main screenshot (to be used as the theme's thumbnail) saved as assets/screenshots/theme-name/thumbnail.jpg
+4. Copy example.md from the repository root into _themes and rename it as theme-name.md
+5. Edit the YAML data in the file to reflect your theme (see below).
+6. Submit a pull request!
 
 ### YAML Data
 
@@ -23,7 +24,7 @@
 | gem | The Gem name if the theme is published on RubyGems.  If not, remove this line.  | |
 | demo  | A link to the theme's demo website.  | |
 | download  | A direct link to download the theme. | |
-| screenshots | The list of screenshot filenames stored at assets/screenshots/theme-name.  The first item will be used as the theme's thumbnail. | |
+| screenshots | The list of screenshot filenames stored at assets/screenshots/theme-name. | |
 | description | A short description of the theme.  | |
 | categories | A list of categories the theme fits in. | Generally follows WordPress categories.  See the current list on the <a href="https://themejekyll.github.io">ThemeJekyll website</a>. |
 | layouts | A list of layouts the theme supports. | 1 Column, 2 Column, 3 Column, 4 Column, Grid |
@@ -31,7 +32,11 @@
 
 ### Screenshots
 
-Screenshots must be 1366x768 pixels and saved as a JPG.  Use Firefox's Responsive Design Mode to get the size exact.  GIMP or ImageMagick can convert the screenshots to JPG.
+Screenshots must be 1366x768 pixels and saved as a JPG.  Use Firefox's Responsive Design Mode to get the size exact.
+
+The thumbnail screenshot must be resized to 640x360 at 85% quality and saved to assets/screenshots/theme-name/thumbnail.jpg
+
+GIMP or ImageMagick can convert and resize the screenshots and thumbnail.
 
 ### Theme Requirements
 
