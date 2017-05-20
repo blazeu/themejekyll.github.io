@@ -334,7 +334,6 @@ $(document).ready(function () {
 
     // Event handler for handling browser back and forward
     $(window).on('popstate', function (e) {
-      console.log(e)
       if (e.target.location.href === window.location.origin + '/themes/') {
         unloadAjaxPage()
       } else {
