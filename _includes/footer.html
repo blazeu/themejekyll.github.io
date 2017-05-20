@@ -1,25 +1,25 @@
 {% if page.layout != 'noscript' %}
-  <script src="{{ site.baseurl }}/assets/libraries/jquery/jquery.min.js"></script>
-  <script async src="{{ site.baseurl }}/assets/libraries/imagesloaded/imagesloaded.min.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/libraries/materialize-css/js/materialize.min.js"></script>
-  <script async type="text/javascript" src="{{ site.baseurl }}/assets/libraries/swiper/js/swiper.min.js"></script>
-  <script async src="{{ site.baseurl }}/assets/libraries/handlebars/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
   {% include templates.html %}
   {% if page.layout == 'theme' %}
     <script async src="{{ site.baseurl }}/assets/js/theme.min.js"></script>
   {% endif %}
   {% if page.layout == 'themes' %}
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/7.2.0/lazyload.transpiled.min.js"></script>
-    <script async src="{{ site.baseurl }}/assets/libraries/underscore/underscore.min.js"></script>
-    <script async src="{{ site.baseurl }}/assets/libraries/underscore/underscore.string.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/underscore.string/3.3.4/underscore.string.min.js"></script>
     <script async src="{{ site.baseurl }}/assets/js/home.js"></script>
   {% endif %}
 
   <noscript id="deferred-styles">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link type="text/css" href="{{ site.baseurl }}/assets/libraries/animate/animate.min.css" rel="stylesheet">
-    <link type="text/css" href="{{ site.baseurl }}/assets/libraries/swiper/css/swiper.min.css" rel="stylesheet">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
   </noscript>
 
   <script>
