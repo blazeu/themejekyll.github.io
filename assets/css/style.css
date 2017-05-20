@@ -32,9 +32,13 @@ body nav, body footer {
   vertical-align: middle;
 }
 
-h2.brand-logo, h2.brand-logo span{
+h2.brand-logo, h2.brand-logo span {
   line-height: 64px;
   vertical-align: top;
+}
+
+a.brand-logo{
+  font-family: Pacifico;
 }
 
 .no-float{
@@ -42,16 +46,16 @@ h2.brand-logo, h2.brand-logo span{
 }
 
 .mission{
-  font-size: 1rem;
-  line-height: 0;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
+  font-size: 2.28rem;
+  margin-top: 150px;
 }
 
 #theme-nav{
   z-index: 996;
+}
+
+#recentlyAdded{
+  margin-top: 150px;
 }
 
 .blog-post{

@@ -23,13 +23,13 @@ $(document).ready(function () {
   })
 
   $(window).on('popstate', function (e) {
-    if (e.target.location.href === window.location.origin + '/') {
-      window.location = '/'
+    if (e.target.location.href === window.location.origin + '/themes') {
+      window.location = '/themes'
     }
   })
 
   if (window.location.origin === document.baseURI) {
-    window.location = '/'
+    window.location = '/themes'
   }
 
   function updateRatings () {
