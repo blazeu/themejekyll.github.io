@@ -68,6 +68,10 @@ a.brand-logo{
   margin-bottom: 1.5%;
 }
 
+.show-theme .load-more{
+  display: none !important;
+}
+
 .chips-autocomplete input{
   color: white !important;
 }
