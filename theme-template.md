@@ -13,17 +13,17 @@ screenshots:
   - screenshot-1.jpg
   - screenshot-2.jpg
   - screenshot-3.jpg
-description: A quick theme description
+description: A short description of the theme
 features:
   - Responsive
-  - Social Links
+  - Example Feature
 categories:
   - Blog
 layouts:
   - 1 Column
 tags:
   - example
-  - awesome
+  - theme
 ---
 
-This is where you put your main theme description.  Oh, and it works with **Markdown**!
+Put your long theme description here.  This works with Markdown.
