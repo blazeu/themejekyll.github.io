@@ -34,6 +34,7 @@ GIMP or ImageMagick can convert and resize the screenshots and thumbnail.
 | download  | A direct link to download the theme. | |
 | screenshots | The list of screenshot filenames stored at assets/screenshots/theme-name. | |
 | description | A short description of the theme.  | |
+| features | A list of features the theme supports.  | See the current list on the <a href="https://themejekyll.github.io/themes">ThemeJekyll website</a>.  You are also welcome to request a new one by adding it here. |
 | categories | A list of categories the theme fits in. | Generally follows WordPress categories.  See the current list on the <a href="https://themejekyll.github.io/themes">ThemeJekyll website</a>. |
 | layouts | A list of layouts the theme supports. | 1 Column, 2 Column, 3 Column, 4 Column, Grid |
 | tags | A list of tags for the theme. | See <a href="https://themejekyll.github.io/tags">current tag list</a>. |
