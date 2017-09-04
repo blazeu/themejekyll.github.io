@@ -1,7 +1,7 @@
 title: ThemeJekyll
 email: hello@chromaticaldesign.com
 description: Search and find free, open source Jekyll themes.
-baseurl: ""
+baseurl: "/themejekyll.github.io"
 url: ""
 
 sass:
