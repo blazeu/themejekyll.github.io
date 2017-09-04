@@ -1,8 +1,8 @@
 {% raw %}
 <script id="themeTemplate" type="text/x-handlebars-template">
-  <a href="/theme/{{url}}" class="theme animated fadeIn theme-url" id="{{url}}-theme" data-theme="{{url}}">
+  <a href="{{ site.baseurl }}/theme/{{url}}" class="theme animated fadeIn theme-url" id="{{url}}-theme" data-theme="{{url}}">
     <div class="theme-inner">
-      <img class="theme-img lazy" src="/assets/img/blank.gif" alt="{{title}} Jekyll Theme Screenshot" data-original="/assets/screenshots/{{url}}/thumbnail.jpg">
+      <img class="theme-img lazy" src="{{ site.baseurl }}/assets/img/blank.gif" alt="{{title}} Jekyll Theme Screenshot" data-original="{{ site.baseurl }}/assets/screenshots/{{url}}/thumbnail.jpg">
       <div class="theme-actions">
         <div class="theme-text">
           <p class="left theme-title flow-text grey-text text-lighten-3 text-shadow no-margins">{{title}}</p>
@@ -59,7 +59,7 @@
             <div class="swiper-wrapper">
               {{#each screenshots}}
                 <div class="swiper-slide">
-                  <img src="/assets/screenshots/{{../url}}/{{this}}" alt="{{../title}} Jekyll Theme Screenshot">
+                  <img src="{{ site.baseurl }}/assets/screenshots/{{../url}}/{{this}}" alt="{{../title}} Jekyll Theme Screenshot">
                 </div>
               {{/each}}
             </div>
